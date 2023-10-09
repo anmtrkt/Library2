@@ -10,13 +10,13 @@ class Test(unittest.TestCase):
         self.assertEqual(result, 28.274)
 
     def test_triangle(self):
-        triangle1 = Triangle(2,3,4)
+        triangle1 = Triangle(2, 3, 4)
         result = triangle1.calc()
         self.assertEqual(result, 2.905)
 
     def test_is_rect(self):
-        triangle2 = Triangle(2,3,4)
-        triangle3 = Triangle(3,4,5)
+        triangle2 = Triangle(2, 3, 4)
+        triangle3 = Triangle(3, 4, 5)
         result2 = triangle2.isRight
         result3 = triangle3.isRight
         self.assertEqual(result2, False)
@@ -26,4 +26,3 @@ class Test(unittest.TestCase):
         with self.assertRaises(ValueError):
             triangle4 = Triangle(-2, 3, 4)
             result4 = triangle4.calc()
-
